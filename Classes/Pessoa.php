@@ -3,7 +3,7 @@
 class Pessoa{
     
     private $nome;
-    public $endereco;
+    private $endereco;
 
     public function setNome($valor){
         $this->nome = $valor;
@@ -25,7 +25,7 @@ class Pessoa{
     }
 
     private function transformUpperCase($palavra){
-        return strtoupper($palavra);
+        return ucfirst($palavra);
     }
 
 
